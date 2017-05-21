@@ -1,0 +1,61 @@
+﻿// Theme color vars
+/*
+$bg-color:      #F2F2F2 !default;
+$footer-bg:     #333740 !default;
+$color-1:      #708C0B !default;
+$color-2:      #9ABF15 !default;
+$color-3:      #D8F279 !default;
+*/
+/*
+$bg-color:      #f2f2f2 !default;
+$footer-bg:     #252526 !default;
+$color-1:      #bf5454 !default;
+$color-2:      #4f5359 !default;
+$color-3:      #81828c !default;
+*/
+/*
+$bg-color:      #f5f5f5 !default;
+$footer-bg:     #333333 !default;
+$color-1:      #1f5473 !default;
+$color-2:      #097bb8 !default;
+$color-3:      #82bad9 !default;
+*/
+/**/
+$bg-color:      #f1f4f2 !default;
+$footer-bg:     #12151c !default;
+$color-1:      #393e3c !default;
+$color-2:      #697667 !default;
+$color-3:      #ccd2be !default;
+
+
+$font-family:           'Ubuntu', sans-serif !default;
+$font-family-header:    $font-family; //'Orbitron', sans-serif;
+$font-size:             18px !default;
+$line-height:           $font-size + 10px !default;
+
+$topbar-color:          $footer-bg !default;
+$topbar-height:         30px !default;
+
+$menu-item-line-height:         60px !default;
+$menu-item-bottom-border-width: 5px !default;
+$menu-item-hover-color:         #ffffff !default;
+$menu-item-hover-bg:            darken($color-1, 10%) !default;
+$menu-sub-item-height:          40px !default;
+
+$pagetitle-padding:             20px !default;
+$navbar-brand-padding:          10px !default;
+$breadcrum-line-height:         30px;
+
+$flip-card-height:              300px !default;
+
+// Font weight vars
+$font-light:    300 !default;
+$font-regular:  400 !default;
+$font-bold:     700 !default;
+
+
+$padding-base-1:    10px;
+$padding-base-2:    20px;
+$padding-base-3:    30px;
+$padding-base-4:    40px;
+$padding-base-5:    50px;

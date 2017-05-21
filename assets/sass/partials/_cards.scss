@@ -1,0 +1,98 @@
+﻿.card {
+    border:solid 1px $color-2;
+    //@include border-radius(5px);
+    //@include border-radius-separate(0, 0, 5px, 5px);
+    @include box-shadow(5px, 5px, 5px, #ccc);
+    margin-bottom: $padding-base-3;
+
+    &:hover {
+        @include box-shadow(5px, 5px, 5px, #666);
+        @include transition(all 0.5s ease-in-out);
+    }
+
+    .image-wrapper {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            padding:0;        
+        }
+    }
+
+    .content-wrapper {
+        padding: $padding-base-2;
+        padding-top:0; 
+        font-size: $font-size;
+        line-height: $line-height;
+        text-align:center;
+    }
+
+    .button-wrapper{
+        background: $color-3;
+        padding: $padding-base-2 0;
+        text-align:center;
+
+        a {
+            font-size: $font-size + 4px;
+        }
+    }    
+} //card
+
+
+
+
+
+
+
+
+.card-flip {
+    @include css3-prefix(perspective, 1000);
+    margin-bottom: $padding-base-3;
+    width: 100%;
+	height: $flip-card-height;
+
+    &:hover .flipper,  
+    &.hover .flipper { @include css3-prefix(transform, rotateY(180deg)); }
+    
+    .flipper {
+        @include css3-prefix(transition, 0.6s);
+        @include css3-prefix(transform-style, preserve-3d);
+
+        .front, .back {
+	        width: 100%;
+	        height: $flip-card-height;
+            @include css3-prefix(backface-visibility, hidden);
+            position: absolute;
+	        top: 0;
+	        left: 0;
+            border:solid 1px $color-2;
+            padding: $padding-base-2; 
+            text-align:center;
+        }
+
+        .front {
+            background:#fff;
+           
+	        z-index: 2;
+            
+            .fa {           
+                font-size:5em;
+                color: #fff;
+                @include border-radius(50%);
+                background: $color-2;
+                padding:$padding-base-3;
+            }
+        }
+
+        .back {
+            @include css3-prefix(transform, rotateY(180deg));
+	        background: $color-2;
+            color:#fff;
+            font-size: $font-size;
+            line-height: $line-height;
+        }
+
+    }
+} //card-flip
+
+

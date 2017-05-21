@@ -1,0 +1,36 @@
+h1, .h1, h2, .h2, h3, .h3, 
+h4, .h4, h5, .h5, h6, .h6 {
+    font-family:    $font-family-header;
+    font-weight:    $headings-font-weight;
+    line-height:    $headings-line-height;
+    color:          $headings-color;
+
+    margin-top:     $line-height-computed;
+    margin-bottom: ($line-height-computed / 2);
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+h1.accent1, .h1.accent1, h2.accent1, .h2.accent1, h3.accent1, .h3.accent1 { color: $color-1; }
+h4.accent1, .h4.accent1, h5.accent1, .h5.accent1, h6.accent1, .h6.accent1 { color: $color-1; }
+
+h1.accent2, .h1.accent2, h2.accent2, .h2.accent2, h3.accent2, .h3.accent2 { color: $color-2; }
+h4.accent2, .h4.accent2, h5.accent2, .h5.accent2, h6.accent2, .h6.accent2 { color: $color-2; }
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+  font-size:$font-size;
+  line-height: $line-height;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:0;
+}
+

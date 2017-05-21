@@ -1,0 +1,40 @@
+﻿@media (min-width: 768px) {
+
+}
+
+
+
+
+@media (max-width: 1200px) { }
+
+@media (max-width: 991px) { }
+
+@media (max-width: 768px) {
+
+    .to-left        { text-align:center !important; }
+    .to-right       { text-align:center !important; }
+
+
+    .navbar-nav > li > a            { line-height: 30px !important; }
+    .navbar-nav > .active > a, .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus { line-height: 30px !important; }
+
+
+}
+  
+	
+
+@media only screen and (max-width: 479px) { }
+
+@media (min-width : 992px) { }
+
+
+@media (min-width : 768px) and (max-width: 991px) { }
+
+
+@media (max-width : 767px) { }
+
+
+@media (max-width : 479px) { }
+
+@media screen and (max-width: 767px) { }

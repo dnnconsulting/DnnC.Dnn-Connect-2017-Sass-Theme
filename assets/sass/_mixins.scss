@@ -1,0 +1,99 @@
+﻿@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+// Transtion mixin
+// Args:    Property | Duration | Timing Function
+// Usage:  transition(property duration ease);
+@mixin transition($args...) {
+    @include css3-prefix('transition', $args);
+}
+
+// Border Radius - all
+// Args:    The radius value
+// Usage:   border-radius(5px);
+@mixin border-radius($radius) {
+    @include css3-prefix('border-radius', $radius);
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Border radius per corner
+// Args:    top-left | top-right | bottom-left | bottom-right
+// Usage:   border-radius-seperate(5px, 5px, 5px, 5px);
+@mixin border-radius-separate($topLeft: 0, $topRight: 0, $bottomLeft: 0, $bottomRight: 0) {
+    -webkit-border-top-left-radius:     $topLeft;
+    -webkit-border-top-right-radius:    $topRight;
+    -webkit-border-bottom-right-radius: $bottomRight;
+    -webkit-border-bottom-left-radius:  $bottomLeft;
+
+    -moz-border-radius-topleft:     $topLeft;
+    -moz-border-radius-topright:    $topRight;
+    -moz-border-radius-bottomright: $bottomRight;
+    -moz-border-radius-bottomleft:  $bottomLeft;
+
+    border-top-left-radius:     $topLeft;
+    border-top-right-radius:    $topRight;
+    border-bottom-right-radius: $bottomRight;
+    border-bottom-left-radius:  $bottomLeft;
+}
+
+// Opacity for ALL browswers
+// Args:    Opacity value
+// Usage:   opacity(0.8);
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $color;
+        -moz-box-shadow:inset $top $left $blur $color;
+        box-shadow:inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+
+
+
+
+
+
+
+
+@mixin contrast-color($background-color) {
+    @if (lightness($background-color) < 50) {
+        color: #ffffff;
+    } @else {
+        color: #333333;
+    }
+}
+
+@mixin contrast-color-imp($background-color) {
+    @if (lightness($background-color) < 50) {
+        color: #ffffff !important;
+    } @else {
+        color: #333333 !important;
+    }
+}
+
+@mixin contrast-backgroundcolor($background-color) {
+    @if (lightness($background-color) < 50) {
+        background-color: #ffffff !important;
+    } @else {
+        background-color: #333333 !important;
+    }
+}

@@ -1,0 +1,5 @@
+﻿<dnn:DnnJsInclude ID="DnnJsTether" runat="server" FilePath="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ForceProvider="DnnFormBottomProvider" Name="trehter" Version="1.4.0" />
+<dnn:DnnJsInclude ID="DnnJsBootStrap" runat="server" FilePath="assets/js/bootstrap.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Name="boostrap" Version="3.3.7" />
+<dnn:DnnJsInclude ID="DnnJsSmartMenus" runat="server" FilePath="assets/js/jquery.smartmenus.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Name="smartmenus" Version="1.0.1" />
+<dnn:DnnJsInclude ID="DnnJsSmartMenusBootstrapPlugin" runat="server" FilePath="assets/js/jquery.smartmenus.bootstrap.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Name="smartmenus" Version="1.0.1" />
+<dnn:DnnJsInclude ID="DnnJsDnnConnectDemo" runat="server" FilePath="assets/js/dnnconnectdemo.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Name="dnnconnectdemo" Version="1.0.0" />
